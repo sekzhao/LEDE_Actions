@@ -27,16 +27,6 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 
 
 
-#添加passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/applications/passwall_package
-#git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/applications/passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci-smartdns-new-version ./package/applications/passwall
-cp -rf ./package/applications/passwall_package/* ./package/applications/passwall
-rm -rf ./package/applications/passwall_package
-#mkdir -p ./package/applications/passwall
-#cp -rf ./feeds/passwall_luci/* ./package/applications/passwall
-#cp -rf ./feeds/passwall_packages/* ./package/applications/passwall
-
 #恢复主机型号
 #sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
 #sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore
