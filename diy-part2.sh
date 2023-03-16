@@ -41,14 +41,3 @@ rm -rf ./feeds/packages/utils/coremark
 ##干掉wan6和ula_prefix
 sed -i "/uci commit fstab/a\uci delete network.wan6\nuci delete network.globals.ula_prefix\nuci set dhcp.lan.start=\'50\'\nuci set network.lan.ip6assign=\'64\'\nuci set network.globals.packet_steering=0\nuci commit network" package/lean/default-settings/files/zzz-default-settings
 
-# mosdns
-find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
-find ./ | grep Makefile | grep mosdns | xargs rm -f
-git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-
-#adguardhome
-git clone https://github.com/kenzok8/openwrt-packages package/luci-app-adguardhome
-
-
-
