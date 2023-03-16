@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: LEDEX64K6.1
+name: oepnwrt_lienol_master
 
 on:
   repository_dispatch:
