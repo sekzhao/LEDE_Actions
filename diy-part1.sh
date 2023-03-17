@@ -25,5 +25,6 @@
 #echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
 #echo 'src-git smartdns_luci https://github.com/pymumu/luci-app-smartdns.git;lede' >>feeds.conf.default
 #echo 'src-git smartdns https://github.com/pymumu/smartdns.git;master' >>feeds.conf.default
-echo 'src-git kenzo  https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+#echo 'src-git kenzo  https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+#echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+sed -i '1i src-git haibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
